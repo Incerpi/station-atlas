@@ -3,22 +3,21 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace station_atlas.Models
 {
-    [Table("TB_USUARIO")]
-    public class Usuario
+    [Table("TB_PRODUTO")]
+    public class Produto
     {
         [Key]
-        public int IdUsuario { get; set; }
+        public int IdProduto { get; set; }
 
         [Required]
         public string Nome { get; set; }
 
         [Required]
-        public string Email { get; set;}
+        public string Descricao { get; set; }
 
         [Required]
-        public string Cpf { get; set;}
+        public string Preco { get; set; }
 
-        [Required]
-        public string Senha { get; set;}
     }
 }
+

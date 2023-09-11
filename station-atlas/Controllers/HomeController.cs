@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using station_atlas.Models;
+﻿using station_atlas.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace station_atlas.Controllers

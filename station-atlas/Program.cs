@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using station;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<OracleDbContext>(options =>
+{
+    options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"));
+});
 
 var app = builder.Build();
 
