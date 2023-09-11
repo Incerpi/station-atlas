@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace station_atlas.Models
 {
-    [Table("TB_PRODUTO")]
+    [Table("PRODUTO")]
     public class Produto
     {
         [Key]
@@ -17,6 +17,10 @@ namespace station_atlas.Models
 
         [Required]
         public string Preco { get; set; }
+
+        [ForeignKey("Categoria")]
+        public int IdCategoria { get; set; }
+        public virtual Categoria? Categoria { get; set; }
 
     }
 }

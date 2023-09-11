@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace station_atlas.Models
 {
-    [Table("TB_PEDIDO")]
+    [Table("PEDIDO")]
     public class Pedido
     {
         [Key]
@@ -18,6 +18,14 @@ namespace station_atlas.Models
         [ForeignKey("Produto")]
         public int IdProduto { get; set; }
         public virtual Produto? Produto { get; set; }
+
+        [ForeignKey("Pagamento")]
+        public int IdPagamento { get; set; }
+        public virtual Pagamento? Pagamento { get; set; }
+
+        [ForeignKey("Cliente")]
+        public int IdCliente { get; set; }
+        public virtual Cliente? Cliente { get; set; }
 
     }
 

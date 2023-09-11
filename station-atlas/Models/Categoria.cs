@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace station_atlas.Models
 {
-    [Table("TB_CATEGORIA")]
+    [Table("CATEGORIA")]
     public class Categoria
     {
 

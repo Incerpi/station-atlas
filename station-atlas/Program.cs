@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using station;
+using station_atlas.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
